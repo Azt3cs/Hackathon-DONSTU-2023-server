@@ -5,3 +5,8 @@ class PariSerializer(serializers.ModelSerializer):
         model = Pari
         fields =('predmet','prepod','date','auditoria','group')
 
+
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = '__all__'
